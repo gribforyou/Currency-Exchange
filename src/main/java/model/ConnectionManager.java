@@ -5,7 +5,7 @@ import org.apache.commons.dbcp.BasicDataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-final class ConnectionManager {
+public final class ConnectionManager {
     private static final BasicDataSource DATA_SOURCE = new BasicDataSource();
     private static final String URL_KEY = "db.url";
 
