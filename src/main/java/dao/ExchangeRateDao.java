@@ -2,8 +2,8 @@ package dao;
 
 public record ExchangeRateDao(
         Integer id,
-        String baseCurrencyCode,
-        String targetCurrencyCode,
-        double exchangeRate
+        CurrencyDao baseCurrency,
+        CurrencyDao targetCurrency,
+        double rate
 ) {
 }
